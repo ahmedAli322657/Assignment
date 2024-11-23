@@ -1,0 +1,49 @@
+
+
+.h3icons {
+    position: relative;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.h3icons::before {
+    content: '';
+    width: 0;
+    height: 25px;
+    border-top: 10px solid;
+    border-left: 10px solid;
+    border-right: 10px solid;
+    border-top-right-radius: 2px;
+    border-top-left-radius: 2px;
+    border-bottom: 6px solid transparent;
+    position: absolute;
+    left: 102%;
+    top: 20%;
+}
+
+.h3icons::after {
+    content: '';
+    width: 0;
+    height: 25px;
+    border-top: 10px solid;
+    border-left: 10px solid;
+    border-right: 10px solid;
+    border-top-right-radius: 2px;
+    border-top-left-radius: 2px;
+    border-bottom: 6px solid transparent;
+    position: absolute;
+    right: 102%;
+    top: 20%;
+}
+
+/* table */
+
+table{
+    text-align: center;
+}
+table thead td{
+    padding-block:0.6rem;
+}
+table tbody td{
+    padding-block: 1rem;
+}
