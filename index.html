@@ -11,27 +11,29 @@
     <title>Document</title>
 </head>
 
-<body class="bg-warning">
+<body>
     <div class="container">
-        <div class="mx-auto p-4">
-            <h2 class="my-5 text-center">BookMarker</h2>
+        <div class="p-4">
+            <div class="content my-5">
+                <div class="hover"></div>
+                <h1 class="layer m-0 text-white">BookMarker</h1>
+            </div>
             <hr>
-            <div class="h3-radiant text-info mb-5">
-                <h3 class="text-center h3icons">Bookmark your favorite sites</h3>
+            <div class="h3-radiant mb-5">
+                <h3 class="text-center h3icons ">Bookmark your favorite sites</h3>
             </div>
             <div class="mb-3">
-                <label for="siteName" class="form-label fw-bold"><i class="fa-solid fa-book-bookmark me-2"></i>Site
-                    Name</label>
-                <input id="siteName" type="text" class="form-control mb-4">
+                <label for="siteName" class="form-label fw-bold text-white"><i class="fa-solid fa-book-bookmark me-2"></i>SiteName</label>
+                <input oninput="validateSiteName()" id="siteName" type="text" class="form-control mb-4">
 
-                <label for="siteUrl" class="form-label fw-bold"><i class="fa-solid fa-link me-2"></i>Site URL</label>
-                <input id="siteUrl" type="text" class="form-control">
+                <label for="siteUrl" class="form-label fw-bold text-white"><i class="fa-solid fa-link me-2"></i>Site URL</label>
+                <input oninput="validateUrl()" id="siteUrl" type="text" class="form-control">
                 <div class="text-center">
-                    <button class="btn btn-outline-info my-3" onclick="createUrl()">Submit</button>
+                    <button class="btn btn-cu my-4 fw-bold" onclick="createUrl()">Submit</button>
                 </div>
-                <hr>
+                <hr class="m-0">
             </div>
-            <table class="w-100 bg-white mt-5">
+            <table class="w-100 bg-white mt-5 rounded-1">
                 <thead>
                     <tr class=" fw-bolder border-bottom">
                         <td>index</td>
