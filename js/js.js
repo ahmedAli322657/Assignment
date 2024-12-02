@@ -114,6 +114,12 @@ myForm2.addEventListener("submit", function (e) {
 
 
 
+
+
+
+
+
+// Assignment 9
 // var siteName = document.getElementById('siteName');
 // var siteUrl = document.getElementById('siteUrl');
 // var siteList = [];
